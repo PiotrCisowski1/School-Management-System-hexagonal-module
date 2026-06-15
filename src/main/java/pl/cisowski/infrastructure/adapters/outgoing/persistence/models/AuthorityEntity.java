@@ -1,0 +1,28 @@
+package pl.cisowski.infrastructure.adapters.outgoing.persistence.models;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "authorities")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class AuthorityEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    @Column(nullable = false)
+    private String authority;
+
+
+    @Override
+    public String toString() {
+        return "name=" + authority;
+    }
+}
