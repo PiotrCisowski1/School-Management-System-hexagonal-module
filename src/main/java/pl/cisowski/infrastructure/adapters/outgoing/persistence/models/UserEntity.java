@@ -1,7 +1,7 @@
 package pl.cisowski.infrastructure.adapters.outgoing.persistence.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import pl.cisowski.domain.model.Gender;
+import pl.cisowski.domain.model.user.Gender;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

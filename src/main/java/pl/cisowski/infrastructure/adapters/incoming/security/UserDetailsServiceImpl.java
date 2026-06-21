@@ -1,6 +1,6 @@
 package pl.cisowski.infrastructure.adapters.incoming.security;
 
-import pl.cisowski.domain.model.User;
+import pl.cisowski.domain.model.user.User;
 import pl.cisowski.domain.ports.outgoing.UserRepositoryPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

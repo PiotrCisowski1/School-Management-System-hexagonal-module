@@ -1,7 +1,7 @@
 package pl.cisowski.infrastructure.adapters.outgoing.persistence;
 
 import pl.cisowski.domain.exceptions.UserNotFoundException;
-import pl.cisowski.domain.model.User;
+import pl.cisowski.domain.model.user.User;
 import pl.cisowski.domain.ports.outgoing.UserRepositoryPort;
 import pl.cisowski.infrastructure.adapters.outgoing.persistence.models.UserEntity;
 import lombok.RequiredArgsConstructor;

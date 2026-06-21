@@ -1,7 +1,7 @@
 package pl.cisowski.infrastructure.adapters.outgoing.persistence;
 
 import org.mapstruct.Mapping;
-import pl.cisowski.domain.model.User;
+import pl.cisowski.domain.model.user.User;
 import pl.cisowski.infrastructure.adapters.outgoing.persistence.models.UserEntity;
 import org.mapstruct.Mapper;
 

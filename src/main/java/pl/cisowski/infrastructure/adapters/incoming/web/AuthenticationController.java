@@ -1,6 +1,6 @@
 package pl.cisowski.infrastructure.adapters.incoming.web;
 
-import pl.cisowski.domain.model.User;
+import pl.cisowski.domain.model.user.User;
 import pl.cisowski.domain.ports.outgoing.UserAuthPort;
 import pl.cisowski.infrastructure.adapters.incoming.models.LoginRequest;
 import pl.cisowski.infrastructure.adapters.incoming.models.LoginResponse;

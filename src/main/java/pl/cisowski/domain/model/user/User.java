@@ -1,4 +1,4 @@
-package pl.cisowski.domain.model;
+package pl.cisowski.domain.model.user;
 
 import java.time.ZonedDateTime;
 import java.util.Collection;

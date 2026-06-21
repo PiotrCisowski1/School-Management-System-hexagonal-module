@@ -1,6 +1,6 @@
 package pl.cisowski.application.services;
 
-import pl.cisowski.domain.model.User;
+import pl.cisowski.domain.model.user.User;
 import pl.cisowski.domain.ports.outgoing.UserAuthPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;

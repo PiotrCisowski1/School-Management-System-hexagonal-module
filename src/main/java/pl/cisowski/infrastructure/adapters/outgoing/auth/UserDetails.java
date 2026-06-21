@@ -1,7 +1,7 @@
 package pl.cisowski.infrastructure.adapters.outgoing.auth;
 
 import org.springframework.util.CollectionUtils;
-import pl.cisowski.domain.model.User;
+import pl.cisowski.domain.model.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;

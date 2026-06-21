@@ -1,6 +1,6 @@
 package pl.cisowski.infrastructure.adapters.incoming.security;
 
-import pl.cisowski.domain.model.User;
+import pl.cisowski.domain.model.user.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;

@@ -1,4 +1,4 @@
-package pl.cisowski.domain.model;
+package pl.cisowski.domain.model.user;
 
 public class Address {
     private Integer id;
