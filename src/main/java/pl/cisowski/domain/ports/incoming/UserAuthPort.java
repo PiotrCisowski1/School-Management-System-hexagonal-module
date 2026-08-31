@@ -1,4 +1,4 @@
-package pl.cisowski.domain.ports.outgoing;
+package pl.cisowski.domain.ports.incoming;
 
 import pl.cisowski.domain.model.user.User;
 

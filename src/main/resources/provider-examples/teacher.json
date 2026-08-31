@@ -1,0 +1,28 @@
+{
+  "id": 1513,
+  "leadingYearbook": {
+    "id": 123
+  },
+  "teachingSubjects": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ],
+  "availability": [
+    {
+      "dayOfWeek": 2,
+      "startTime": "10:00",
+      "endTime": "16:00",
+      "isAvailable": true
+    },
+    {
+      "dayOfWeek": 3,
+      "startTime": "10:00",
+      "endTime": "16:00",
+      "isAvailable": false
+    }
+  ]
+}

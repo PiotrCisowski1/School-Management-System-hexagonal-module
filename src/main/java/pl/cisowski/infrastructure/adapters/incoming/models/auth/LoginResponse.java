@@ -1,4 +1,4 @@
-package pl.cisowski.infrastructure.adapters.incoming.models;
+package pl.cisowski.infrastructure.adapters.incoming.models.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

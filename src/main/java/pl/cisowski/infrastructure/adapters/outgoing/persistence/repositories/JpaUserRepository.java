@@ -1,4 +1,4 @@
-package pl.cisowski.infrastructure.adapters.outgoing.persistence;
+package pl.cisowski.infrastructure.adapters.outgoing.persistence.repositories;
 
 import pl.cisowski.infrastructure.adapters.outgoing.persistence.models.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

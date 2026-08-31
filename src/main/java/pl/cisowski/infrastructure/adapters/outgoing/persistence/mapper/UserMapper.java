@@ -1,4 +1,4 @@
-package pl.cisowski.infrastructure.adapters.outgoing.persistence;
+package pl.cisowski.infrastructure.adapters.outgoing.persistence.mapper;
 
 import org.mapstruct.Mapping;
 import pl.cisowski.domain.model.user.User;

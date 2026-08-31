@@ -1,4 +1,4 @@
-package pl.cisowski.infrastructure.adapters.outgoing.persistence;
+package pl.cisowski.infrastructure.adapters.outgoing.persistence.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Named;

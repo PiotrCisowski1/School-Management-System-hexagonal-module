@@ -1,0 +1,40 @@
+{
+  "id": 513,
+  "symbol": "1A",
+  "headTeacher": {
+    "id": 581,
+    "leadingYearbook": {
+      "id": 513
+    },
+    "teachingSubjects": [
+      {
+        "id": 675,
+        "name": "Math 101",
+        "code": "M101",
+        "description": "Math for newbies",
+        "subjectType": {
+          "name": "MATH"
+        }
+      }
+    ],
+    "availability": [ {
+      "dayOfWeek": "MONDAY",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "isAvailable": "true"
+    }]
+  },
+  "startingYear": "2026-07-06T00:00:00.000000000Z",
+  "graduationYear": "2030-07-06T00:00:00.000000000Z",
+  "studentsInYearbook": [
+    {
+      "id": 47
+    },
+    {
+      "id": 396
+    },
+    {
+      "id": 645
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 package pl.cisowski.infrastructure.adapters.incoming.web;
 
+import pl.cisowski.domain.exceptions.EntityNotFoundException;
+import pl.cisowski.domain.exceptions.ScheduleAppointmentConflictException;
 import pl.cisowski.domain.exceptions.UserNotFoundException;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -17,6 +19,20 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
     protected ResponseEntity<String> handleUserNotFoundEx(UserNotFoundException exception) {
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
+                .body(exception.getMessage());
+    }
+
+    @ExceptionHandler(EntityNotFoundException.class)
+    protected ResponseEntity<String> handleEntityNotFoundEx(EntityNotFoundException exception) {
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body(exception.getMessage());
+    }
+
+    @ExceptionHandler(ScheduleAppointmentConflictException.class)
+    protected ResponseEntity<String> handleScheduleAlreadyAppointedEx(ScheduleAppointmentConflictException exception) {
+        return ResponseEntity
+                .status(HttpStatus.CONFLICT)
                 .body(exception.getMessage());
     }
 }

@@ -1,0 +1,9 @@
+{
+  "id": 978,
+  "name": "Math 101",
+  "code": "M101",
+  "description": "Math for newbies",
+  "subjectType": {
+    "name": "MATH"
+  }
+}

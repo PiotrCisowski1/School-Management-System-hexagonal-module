@@ -1,0 +1,19 @@
+{
+  "id": 9425,
+  "name": "The Classroom",
+  "capacity": 30,
+  "classroomEquipments": [
+    {
+      "equipment": {
+        "name": "interactive board"
+      },
+      "quantity": 1
+    },
+    {
+      "equipment": {
+        "name": "projector"
+      },
+      "quantity": 1
+    }
+  ]
+}
