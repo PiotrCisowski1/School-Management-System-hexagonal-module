@@ -1,8 +1,4 @@
-# 🏛️ Schedule Module — Hexagonal Architecture Showcase (PoC)
-
-[![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)](https://spring.io/projects/spring-boot)
-[![Architecture](https://img.shields.io/badge/Architecture-Hexagonal%20%2F%20Ports%20%26%20Adapters-blue.svg)](#-architectural-overview--design-decisions)
+# Schedule Module — Hexagonal Architecture Showcase (PoC)
 
 > **Proof of Concept (PoC) & Portfolio Technical Demonstration**
 > 
@@ -10,9 +6,9 @@
 
 ---
 
-## 📌 Project Purpose & Context
+## Project Purpose & Context
 
-This repository is **not** a full production application. It serves as an isolated architectural case study created for portfolio presentation and senior technical evaluation. 
+This repository is **not** a full production application. It serves as an isolated architectural case study created for portfolio presentation. 
 
 The primary objective is to showcase:
 * Pure domain isolation without framework pollution.
@@ -21,7 +17,7 @@ The primary objective is to showcase:
 
 ---
 
-## 🏗️ Architectural Overview & Key Design Decisions
+## Architectural Overview & Key Design Decisions
 
 The module enforces strict separation across three primary layers: `Domain`, `Application`, and `Infrastructure`.
 
@@ -55,9 +51,9 @@ The module enforces strict separation across three primary layers: `Domain`, `Ap
 ```
 
 ### 1. Pure Domain Layer (Dependency Inversion)
-* **Zero Framework Coupling:** The `pl.cisowski.domain` package is **100% framework-agnostic**. It contains no references to Spring, JPA, Jackson, MapStruct, or Lombok.
-* **Pure Java SE:** All business logic, domain entities, value objects, and domain exceptions are implemented purely in Java (`java.time.*`, `java.util.*`).
-* **Inward Dependency Rule:** Dependencies strictly point inward (`Infrastructure` $\rightarrow$ `Application` $\rightarrow$ `Domain`).
+* **Zero Framework Coupling:** The `domain` package is **100% framework-agnostic**. It contains no references to Spring, JPA, Jackson, MapStruct, or Lombok.
+* **Pure Java SE:** All business logic, domain entities, value objects, and domain exceptions are implemented purely in Java.
+* **Inward Dependency Rule:** Dependencies strictly point inward (`Infrastructure` -> `Application` -> `Domain`).
 
 ### 2. Granular Ports & Single Responsibility (SRP)
 * **Input Ports (Use Cases):** Each action on the domain model is granular and defined in a dedicated interface (e.g., `CreateSchedulePort`), strictly adhering to SRP.
@@ -75,18 +71,18 @@ The module enforces strict separation across three primary layers: `Domain`, `Ap
 
 ---
 
-## 🛠️ Tech Stack & Tooling
+## Tech Stack & Tooling
 
 * **Language:** Java 17
 * **Framework:** Spring Boot 3.x (Web, Security, Data JPA)
-* **Persistence:** H2 / Relational JPA (Abstracted behind Domain Ports)
+* **Persistence:** Relational JPA (Abstracted behind Domain Ports)
 * **Mapping:** MapStruct
 * **Testing:** JUnit 5, Mockito, AssertJ, Instancio
 * **Build System:** Maven (Explicitly declared version tags for build reproducibility)
 
 ---
 
-## 💡 Explicit Scope & Intentional Omissions (PoC Trade-offs)
+## Explicit Scope & Intentional Omissions (PoC Trade-offs)
 
 To keep the focus strictly on clean architectural patterns and eliminate unnecessary code noise, the following elements were **intentionally omitted**:
 * ✖ **Loggers:** Structured logging frameworks (SLF4J/Logback) were omitted to highlight pure business flow readability.
@@ -96,7 +92,7 @@ To keep the focus strictly on clean architectural patterns and eliminate unneces
 
 ---
 
-## 🚀 Key Feature Showcase
+## Key Feature Showcase
 
 ### Schedule Creation Flow (`POST /version/{scheduleVersionId}`)
 Executing the `CreateSchedulePort` triggers a multi-step domain validation sequence:
